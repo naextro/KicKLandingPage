@@ -1,43 +1,54 @@
+/* ===== PRODUCT PAGE LAYOUT ===== */
+
+/* Main product view container */
 .product-view {
     display: flex;
     max-width: 1200px;
     margin: 40px auto;
-    gap: 60px;
+    gap: 60px; /* Space between images and details */
     padding: 0 20px;
 }
 
+/* ===== PRODUCT IMAGES SECTION ===== */
+
+/* Product images grid container */
 .product-images {
     flex: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2x2 grid */
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     max-width: 600px;
 }
 
+/* Main product image (top-left, larger) */
 .main-image {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border: 2px solid #0066cc;
+    border: 2px solid #0066cc; /* Highlighted border for main image */
     border-radius: 8px;
     overflow: hidden;
 }
 
+/* Lifestyle view image (top-right) */
 .lifestyle-image {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
+/* Close-up front view (bottom-left) */
 .closeup-front {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
+/* Close-up side view (bottom-right) */
 .closeup-side {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
+/* Product image styling */
 .product-images img {
     width: 100%;
     height: 100%;
@@ -45,14 +56,18 @@
     border-radius: 6px;
 }
 
+/* ===== PRODUCT DETAILS SECTION ===== */
+
+/* Product information and purchase options */
 .product-details {
     flex: 1;
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 24px; /* Consistent spacing between elements */
 }
 
+/* New release badge */
 .new-release-tag {
     background-color: #0066cc;
     color: white;
@@ -64,6 +79,7 @@
     width: fit-content;
 }
 
+/* Product name/title */
 .product-name {
     font-size: 28px;
     font-weight: 700;
@@ -73,6 +89,7 @@
     line-height: 1.2;
 }
 
+/* Product price */
 .product-price {
     font-size: 24px;
     font-weight: 700;
@@ -80,12 +97,16 @@
     margin: 0;
 }
 
+/* ===== COLOR SELECTION SECTION ===== */
+
+/* Color selection container */
 .color-selection {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+/* Color selection label */
 .color-selection label {
     font-size: 14px;
     font-weight: 400;
@@ -93,36 +114,44 @@
     color: #232321;
 }
 
+/* Color options container */
 .color-options {
     display: flex;
     gap: 12px;
 }
 
+/* Individual color swatch */
 .color-swatch {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular swatches */
     border: 2px solid transparent;
     cursor: pointer;
     transition: border-color 0.2s ease;
 }
 
+/* Selected color swatch */
 .color-swatch.selected {
-    border-color: #232321;
+    border-color: #232321; /* Dark border for selected color */
 }
 
+/* ===== SIZE SELECTION SECTION ===== */
+
+/* Size selection container */
 .size-selection {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+/* Size header with label and size chart link */
 .size-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Size label */
 .size-header label {
     font-size: 14px;
     font-weight: 600;
@@ -130,22 +159,26 @@
     color: #232321;
 }
 
+/* Size chart link */
 .size-chart {
     font-size: 12px;
     color: #666;
     text-decoration: none;
 }
 
+/* Size chart link hover effect */
 .size-chart:hover {
     text-decoration: underline;
 }
 
+/* Size options grid */
 .size-options {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr); /* 8 columns for size buttons */
     gap: 8px;
 }
 
+/* Individual size button */
 .size-btn {
     padding: 12px 8px;
     border: 1px solid #ddd;
@@ -158,29 +191,36 @@
     border-radius: 4px;
 }
 
+/* Size button hover effect */
 .size-btn:hover {
     background-color: #e8e8e8;
 }
 
+/* Selected size button */
 .size-btn.selected {
     background-color: #232321;
     color: white;
     border-color: #232321;
 }
 
+/* Larger size buttons (last two) span 4 columns each */
 .size-btn:nth-child(9),
 .size-btn:nth-child(10) {
     grid-column: span 4;
 }
 
+/* ===== ACTION BUTTONS SECTION ===== */
+
+/* Action buttons container */
 .action-buttons {
     display: flex;
     gap: 12px;
     align-items: center;
 }
 
+/* Add to cart button */
 .add-to-cart {
-    flex: 1;
+    flex: 1; /* Takes remaining space */
     padding: 16px 24px;
     background-color: #232321;
     color: white;
@@ -193,10 +233,12 @@
     transition: background-color 0.2s ease;
 }
 
+/* Add to cart button hover effect */
 .add-to-cart:hover {
     background-color: #000;
 }
 
+/* Wishlist button */
 .wishlist-btn {
     width: 48px;
     height: 48px;
@@ -211,22 +253,26 @@
     transition: all 0.2s ease;
 }
 
+/* Wishlist button hover effect */
 .wishlist-btn:hover {
     background-color: #f8f8f8;
     border-color: #232321;
 }
 
+/* Active wishlist button (when item is in wishlist) */
 .wishlist-btn.active {
-    color: #ff4757;
+    color: #ff4757; /* Red color for active state */
 }
 
+/* Active product image (when clicked) */
 .product-images .active {
     border: 2px solid #0066cc;
     border-radius: 8px;
 }
 
+/* Buy now button */
 .buy-now {
-    flex: 1;
+    flex: 1; /* Takes remaining space */
     padding: 16px 24px;
     background-color: #0066cc;
     color: white;
@@ -239,16 +285,21 @@
     transition: background-color 0.2s ease;
 }
 
+/* Buy now button hover effect */
 .buy-now:hover {
     background-color: #0052a3;
 }
 
+/* ===== PRODUCT INFORMATION SECTION ===== */
+
+/* Product information container */
 .product-info {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+/* Product info section title */
 .product-info h3 {
     font-size: 16px;
     font-weight: 700;
@@ -257,18 +308,21 @@
     margin: 0;
 }
 
+/* Color description text */
 .color-description {
     font-size: 14px;
     color: #666;
     margin: 0;
 }
 
+/* Exclusion text for promotional offers */
 .exclusion-text {
     font-size: 14px;
     color: #666;
     margin: 0;
 }
 
+/* Product benefits list */
 .product-benefits {
     list-style: none;
     padding: 0;
@@ -278,13 +332,15 @@
     gap: 8px;
 }
 
+/* Individual benefit item */
 .product-benefits li {
     font-size: 14px;
     color: #666;
     position: relative;
-    padding-left: 16px;
+    padding-left: 16px; /* Space for bullet point */
 }
 
+/* Custom bullet point for benefits */
 .product-benefits li::before {
     content: "•";
     position: absolute;
@@ -292,34 +348,44 @@
     color: #666;
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile and tablet responsive adjustments */
 @media (max-width: 768px) {
+    /* Stack product view vertically on mobile */
     .product-view {
         flex-direction: column;
         gap: 40px;
         margin: 20px auto;
     }
     
+    /* Allow images to take full width */
     .product-images {
         max-width: 100%;
     }
     
+    /* Allow details to take full width */
     .product-details {
         max-width: 100%;
     }
     
+    /* Reduce size options to 5 columns on mobile */
     .size-options {
         grid-template-columns: repeat(5, 1fr);
     }
     
+    /* Adjust larger size buttons to span 2.5 columns each */
     .size-btn:nth-child(9),
     .size-btn:nth-child(10) {
         grid-column: span 2.5;
     }
     
+    /* Stack action buttons vertically */
     .action-buttons {
         flex-direction: column;
     }
     
+    /* Align wishlist button to the right */
     .wishlist-btn {
         align-self: flex-end;
     }

@@ -2,49 +2,59 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for proper document setup and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KICKS</title>
+    
+    <!-- Favicon and external resources -->
     <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
-
 </head>
 
 <body>
+    <!-- Desktop Navigation Bar -->
     <nav class="navbar-container">
+        <!-- Left navigation links with dropdown indicators -->
         <div class="navbar-left">
             <a href="#" class="navbar-link active">New Drops <span>🔥</span></a>
             <a href="#" class="navbar-link">Men <span class="dropdown">▼</span></a>
             <a href="#" class="navbar-link">Women <span class="dropdown">▼</span></a>
         </div>
+        
+        <!-- Center logo section -->
         <div class="navbar-center">
             <span class="navbar-logo"><img style="color: black;" src="./assets/home/kicks.svg" alt="Logo" width="190"></span>
         </div>
+        
+        <!-- Right navigation icons and cart -->
         <div class="navbar-right">
+            <!-- Search icon button -->
             <button class="navbar-icon" aria-label="Search">
-                <!-- icon stolen from gpt -->
                 <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" viewBox="0 0 24 24">
                     <circle cx="11" cy="11" r="8" />
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
             </button>
+            <!-- User account icon button -->
             <button class="navbar-icon" aria-label="Account">
-                <!-- icon stolen from gpt -->
                 <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" viewBox="0 0 24 24">
                     <circle cx="12" cy="8" r="4" />
                     <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
                 </svg>
             </button>
+            <!-- Shopping cart button with item count -->
             <button class="cart-btn" aria-label="Cart">0</button>
         </div>
     </nav>
+    
+    <!-- Mobile Navigation Bar (hidden on desktop) -->
     <nav class="mobile-navbar">
+        <!-- Mobile header with logo and hamburger menu -->
         <div class="mobile-navbar-header">
             <span class="mobile-navbar-logo"><img src="./assets/home/kicks.svg" alt="Logo" width="120"></span>
             <button class="hamburger" aria-label="Open Menu">
@@ -53,6 +63,8 @@
                 <span class="bar"></span>
             </button>
         </div>
+        
+        <!-- Mobile navigation menu (collapsible) -->
         <div class="mobile-navbar-menu">
             <a href="#" class="mobile-navbar-link active">New Drops <span>🔥</span></a>
             <a href="#" class="mobile-navbar-link">Men <span class="dropdown">▼</span></a>
@@ -63,27 +75,40 @@
         </div>
     </nav>
 
+    <!-- Main Content Container -->
     <div class="container">
+        <!-- Product Detail Section -->
         <div class="product-view">
+            <!-- Product Images Grid -->
             <div class="product-images">
+                <!-- Main product image (top-left) -->
                 <div class="main-image">
                     <img src="assets/home/shoe1.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
                 </div>
+                <!-- Lifestyle view image (top-right) -->
                 <div class="lifestyle-image">
                     <img src="assets/home/shoe2.png" alt="Lifestyle view of running shoes" />
                 </div>
+                <!-- Close-up front view (bottom-left) -->
                 <div class="closeup-front">
                     <img src="assets/home/shoe3.png" alt="Close-up front view of running shoes" />
                 </div>
+                <!-- Close-up side view (bottom-right) -->
                 <div class="closeup-side">
                     <img src="assets/home/shoe4.png" alt="Close-up side view of running shoes" />
                 </div>
             </div>
+            
+            <!-- Product Information and Purchase Options -->
             <div class="product-details">
+                <!-- New release badge -->
                 <div class="new-release-tag">New Release</div>
+                
+                <!-- Product name and price -->
                 <h1 class="product-name">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
                 <div class="product-price">$125.00</div>
                 
+                <!-- Color selection section -->
                 <div class="color-selection">
                     <label>COLOR</label>
                     <div class="color-options">
@@ -92,6 +117,7 @@
                     </div>
                 </div>
                 
+                <!-- Size selection section -->
                 <div class="size-selection">
                     <div class="size-header">
                         <label>SIZE</label>
@@ -111,6 +137,7 @@
                     </div>
                 </div>
                 
+                <!-- Action buttons for purchase -->
                 <div class="action-buttons">
                     <button class="add-to-cart">ADD TO CART</button>
                     <button class="wishlist-btn">
@@ -121,6 +148,7 @@
                     <button class="buy-now">BUY IT NOW</button>
                 </div>
                 
+                <!-- Product information and benefits -->
                 <div class="product-info">
                     <h3>ABOUT THE PRODUCT</h3>
                     <p class="color-description">Shadow Navy / Army Green</p>
@@ -133,32 +161,43 @@
             </div>
         </div>
 
+        <!-- Related Products Section -->
         <div class="landing-products">
+            <!-- Section header -->
             <div class="lp1">
                 <div class="lp1-text">
                     <h1>You May Also Like</h1>
                 </div>
                 <button>SHOP NEW DROPS</button>
             </div>
+            
+            <!-- Related products grid -->
             <div class="lp2">
+                <!-- Related product 1 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe1.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Related product 2 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe2.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Related product 3 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe3.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Related product 4 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe4.png" alt="Adidas Shoe" class="product-img" />
@@ -167,7 +206,10 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Footer Section -->
         <div class="foot-container">
+            <!-- Newsletter signup section -->
             <div class="foot-top">
                 <div class="foot-left">
                     <h2 class="foot-heading">JOIN OUR KICKSPLUS<br>CLUB & GET 15% OFF</h2>
@@ -180,13 +222,16 @@
                 <img src="assets/home/kicksWhite.svg" alt="KICKS Logo" class="foot-logo" />
             </div>
 
+            <!-- Footer navigation and links -->
             <div class="foot-bottom">
+                <!-- About us section -->
                 <div class="foot-section foot-about">
                     <h3 class="foot-title">About us</h3>
                     <p class="foot-desc">We are the biggest hyperstore in the universe.<br>We got you all cover with our
                         exclusive<br>collections and latest drops.</p>
                 </div>
 
+                <!-- Product categories -->
                 <div class="foot-section">
                     <h3 class="foot-title">Categories</h3>
                     <ul class="foot-list">
@@ -199,6 +244,7 @@
                     </ul>
                 </div>
 
+                <!-- Company information -->
                 <div class="foot-section">
                     <h3 class="foot-title">Company</h3>
                     <ul class="foot-list">
@@ -208,6 +254,7 @@
                     </ul>
                 </div>
 
+                <!-- Social media links -->
                 <div class="foot-section">
                     <h3 class="foot-title">Follow us</h3>
                     <div class="foot-socials">
@@ -218,13 +265,15 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Footer bottom with logo -->
             <div class="foot-end">
-                <img src="assets/home/kicksWhite.svg" alt="">
+                <img src="assets/home/kicksWhite.svg" alt="KICKS Logo">
             </div>
         </div>
-
-
     </div>
+    
+    <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>
 

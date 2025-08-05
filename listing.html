@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for proper document setup and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KICKS</title>
+    
+    <!-- Favicon and external resources -->
+    <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Desktop Navigation Bar -->
+    <nav class="navbar-container">
+        <!-- Left navigation links with dropdown indicators -->
+        <div class="navbar-left">
+            <a href="#" class="navbar-link active">New Drops <span>🔥</span></a>
+            <a href="#" class="navbar-link">Men <span class="dropdown">▼</span></a>
+            <a href="#" class="navbar-link">Women <span class="dropdown">▼</span></a>
+        </div>
+        
+        <!-- Center logo section -->
+        <div class="navbar-center">
+            <span class="navbar-logo"><img style="color: black;" src="./assets/home/kicks.svg" alt="Logo"
+                    width="190"></span>
+        </div>
+        
+        <!-- Right navigation icons and cart -->
+        <div class="navbar-right">
+            <!-- Search icon button -->
+            <button class="navbar-icon" aria-label="Search">
+                <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </button>
+            <!-- User account icon button -->
+            <button class="navbar-icon" aria-label="Account">
+                <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                </svg>
+            </button>
+            <!-- Shopping cart button with item count -->
+            <button class="cart-btn" aria-label="Cart">0</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation Bar (hidden on desktop) -->
+    <nav class="mobile-navbar">
+        <!-- Mobile header with logo and hamburger menu -->
+        <div class="mobile-navbar-header">
+            <span class="mobile-navbar-logo"><img src="./assets/home/kicks.svg" alt="Logo" width="120"></span>
+            <button class="hamburger" aria-label="Open Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile navigation menu (collapsible) -->
+        <div class="mobile-navbar-menu">
+            <a href="#" class="mobile-navbar-link active">New Drops <span>🔥</span></a>
+            <a href="#" class="mobile-navbar-link">Men <span class="dropdown">▼</span></a>
+            <a href="#" class="mobile-navbar-link">Women <span class="dropdown">▼</span></a>
+            <a href="#" class="mobile-navbar-link"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+            <a href="#" class="mobile-navbar-link"><i class="fa-regular fa-user"></i> Account</a>
+            <a href="#" class="mobile-navbar-link"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Product Listing Main Section -->
+        <div class="main-div">
+            <!-- Promotional Banner Section -->
+            <div class="cool-banner">
+                <img src="assets/listing/banner.png" alt="Limited time offer banner">
+                <div class="banner-stuff">
+                    <p class="small-text">Limited time only</p>
+                    <h1 class="big-title">Get 30% off</h1>
+                    <p class="banner-words">Sneakers made with your comfort in mind so you can put all of your focus into
+                        your next session.</p>
+                </div>
+            </div>
+
+            <!-- Product List and Filter Section -->
+            <div class="product-list-area">
+                <!-- List header with title, count, and sort options -->
+                <div class="list-header">
+                    <h2>Life Style Shoes</h2>
+                    <p class="num-items">122 items</p>
+                    <div class="sort-dropdown">
+                        <label for="sort">TRENDING</label>
+                        <select name="sort" id="sort">
+                            <option value="trending">▼</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Main content area with filters and product grid -->
+                <div class="main-section">
+                    <!-- Sidebar Filters -->
+                    <div class="side-filters">
+                        <!-- Active filters section -->
+                        <div class="filter-box">
+                            <div class="filter-heading">REFINE BY</div>
+                            <div class="filter-buttons">
+                                <button class="a-tag-button current-one">Men's</button>
+                                <button class="a-tag-button">Casual</button>
+                            </div>
+                        </div>
+
+                        <!-- Size filter dropdown -->
+                        <div class="filter-box hide-show-filter">
+                            <div class="filter-heading click-to-open">SIZE <span>&#9660;</span></div>
+                            <div class="choices sizes hidden-content">
+                                <button>38</button>
+                                <button>39</button>
+                                <button>40</button>
+                                <button>41</button>
+                                <button>42</button>
+                                <button>43</button>
+                                <button>44</button>
+                                <button>45</button>
+                                <button>46</button>
+                                <button>47</button>
+                            </div>
+                        </div>
+
+                        <!-- Color filter dropdown -->
+                        <div class="filter-box hide-show-filter">
+                            <div class="filter-heading click-to-open">COLOR <span>&#9660;</span></div>
+                            <div class="choices colors hidden-content">
+                                <div class="color-dot dark-color"></div>
+                                <div class="color-dot orange-color"></div>
+                                <div class="color-dot blue-color"></div>
+                                <div class="color-dot light-color"></div>
+                                <div class="color-dot green-color"></div>
+                                <div class="color-dot brown-color"></div>
+                            </div>
+                        </div>
+
+                        <!-- Category filter dropdown -->
+                        <div class="filter-box hide-show-filter">
+                            <div class="filter-heading click-to-open">SIZE <span>&#9660;</span></div>
+                            <div class="choices hidden-content">
+                                <label class="check-box">Casual shoes
+                                    <input type="checkbox" checked="checked">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Runners
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Hiking
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Sneaker
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Basketball
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Golf
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Outdoor
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Gender filter dropdown -->
+                        <div class="filter-box hide-show-filter">
+                            <div class="filter-heading click-to-open">GENDER <span>&#9660;</span></div>
+                            <div class="choices hidden-content">
+                                <label class="check-box">Men
+                                    <input type="checkbox" checked="checked">
+                                    <span class="little-check"></span>
+                                </label>
+                                <label class="check-box">Women
+                                    <input type="checkbox">
+                                    <span class="little-check"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Grid -->
+                    <div class="shoe-grid">
+                        <!-- Product item 1 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ULTRA BOOST 1.0 MIAMI GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ULTRA BOOST 1.0 MIAMI GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 2 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS OZELIA SHOES GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS OZELIA SHOES GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 3 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS 4DFWD 2 RUNNING SHOES" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS 4DFWD 2 RUNNING SHOES</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 4 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ULTRABOOST 1.0 MIAMI GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ULTRABOOST 1.0 MIAMI GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 5 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS OZELIA SHOES GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS OZELIA SHOES GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 6 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS 4DFWD 2 RUNNING SHOES" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS 4DFWD 2 RUNNING SHOES</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 7 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ULTRABOOST 1.0 MIAMI GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ULTRABOOST 1.0 MIAMI GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 8 (with discount) -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge discount">30% off</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS OZELIA SHOES GREEN" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS OZELIA SHOES GREEN</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - <span class="old-price-text">$125</span>
+                                        $90</button>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Product item 9 -->
+                        <a href="product.html" class="shoe-item">
+                            <div class="sale-badge new-item">New</div>
+                            <img src="assets/listing/shoe1.png" alt="ADIDAS 4DFWD 2 RUNNING SHOES" class="shoe-pic">
+                            <div class="shoe-info">
+                                <h3 class="shoe-name">ADIDAS 4DFWD 2 RUNNING SHOES</h3>
+                                <div class="buy-buttons">
+                                    <button class="get-shoe-button">VIEW PRODUCT - $125</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Navigation -->
+            <div class="page-nav">
+                <button class="page-button"><span>&#9664;</span> PREVIOUS</button>
+                <div class="page-num-buttons">
+                    <button>1</button>
+                    <button>2</button>
+                    <button class="current-one">3</button>
+                    <button>4</button>
+                    <button>...</button>
+                    <button>10</button>
+                </div>
+                <button class="page-button">NEXT <span>&#9654;</span></button>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="bottom-area">
+            <!-- Newsletter signup section -->
+            <div class="top-footer">
+                <div class="footer-left-part">
+                    <h2 class="footer-big-text">JOIN OUR KICKSPLUS<br>CLUB & GET 15% OFF</h2>
+                    <p class="footer-small-text">Sign up for free! Join the community.</p>
+                    <div class="email-signup">
+                        <input type="email" placeholder="Email address" class="email-field" />
+                        <button class="send-button">SUBMIT</button>
+                    </div>
+                </div>
+                <img src="assets/home/kicksWhite.svg" alt="KICKS Logo" class="tiny-logo" />
+            </div>
+
+            <!-- Footer navigation and links -->
+            <div class="lower-footer">
+                <!-- About us section -->
+                <div class="footer-block about-us-info">
+                    <h3 class="section-title">About us</h3>
+                    <p class="info-words">We are the biggest hyperstore in the universe.<br>We got you all cover with our
+                        exclusive<br>collections and latest drops.</p>
+                </div>
+
+                <!-- Product categories -->
+                <div class="footer-block">
+                    <h3 class="section-title">Categories</h3>
+                    <ul class="item-list">
+                        <li>Runners</li>
+                        <li>Sneakers</li>
+                        <li>Basketball</li>
+                        <li>Outdoor</li>
+                        <li>Golf</li>
+                        <li>Hiking</li>
+                    </ul>
+                </div>
+
+                <!-- Company information -->
+                <div class="footer-block">
+                    <h3 class="section-title">Company</h3>
+                    <ul class="item-list">
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+
+                <!-- Social media links -->
+                <div class="footer-block">
+                    <h3 class="section-title">Follow us</h3>
+                    <div class="social-links">
+                        <span><i class="fa-solid fa-globe"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-x-twitter"></i></span>
+                        <span><i class="fa-brands fa-tiktok"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer bottom with logo -->
+            <div class="very-bottom">
+                <img src="assets/home/kicksWhite.svg" alt="KICKS Logo">
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript file for interactive functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>

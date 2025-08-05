@@ -2,48 +2,58 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for proper document setup and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KICKS</title>
+    
+    <!-- Favicon and external resources -->
     <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-
-
 </head>
 
 <body>
+    <!-- Desktop Navigation Bar -->
     <nav class="navbar-container">
+        <!-- Left navigation links with dropdown indicators -->
         <div class="navbar-left">
             <a href="#" class="navbar-link active">New Drops <span>🔥</span></a>
             <a href="#" class="navbar-link">Men <span class="dropdown">▼</span></a>
             <a href="#" class="navbar-link">Women <span class="dropdown">▼</span></a>
         </div>
+        
+        <!-- Center logo section -->
         <div class="navbar-center">
             <span class="navbar-logo"><img style="color: black;" src="./assets/home/kicks.svg" alt="Logo" width="190"></span>
         </div>
+        
+        <!-- Right navigation icons and cart -->
         <div class="navbar-right">
+            <!-- Search icon button -->
             <button class="navbar-icon" aria-label="Search">
-                <!-- icon stolen from gpt -->
                 <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" viewBox="0 0 24 24">
                     <circle cx="11" cy="11" r="8" />
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
             </button>
+            <!-- User account icon button -->
             <button class="navbar-icon" aria-label="Account">
-                <!-- icon stolen from gpt -->
                 <svg width="26" height="26" fill="none" stroke="#232321" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" viewBox="0 0 24 24">
                     <circle cx="12" cy="8" r="4" />
                     <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
                 </svg>
             </button>
+            <!-- Shopping cart button with item count -->
             <button class="cart-btn" aria-label="Cart">0</button>
         </div>
     </nav>
+    
+    <!-- Mobile Navigation Bar (hidden on desktop) -->
     <nav class="mobile-navbar">
+        <!-- Mobile header with logo and hamburger menu -->
         <div class="mobile-navbar-header">
             <span class="mobile-navbar-logo"><img src="./assets/home/kicks.svg" alt="Logo" width="120"></span>
             <button class="hamburger" aria-label="Open Menu">
@@ -52,6 +62,8 @@
                 <span class="bar"></span>
             </button>
         </div>
+        
+        <!-- Mobile navigation menu (collapsible) -->
         <div class="mobile-navbar-menu">
             <a href="#" class="mobile-navbar-link active">New Drops <span>🔥</span></a>
             <a href="#" class="mobile-navbar-link">Men <span class="dropdown">▼</span></a>
@@ -62,24 +74,33 @@
         </div>
     </nav>
 
+    <!-- Main Content Container -->
     <div class="container">
+        <!-- Hero Section with main banner -->
         <div class="hero-container">
+            <!-- Hero title with accent color -->
             <h1 class="hero-title">DO IT <span>RIGHT</span></h1>
+            
+            <!-- Hero banner section with overlay text -->
             <section class="hero">
-                <img class="hero-img" src="./assets/home/hero-1.jpg" alt="" />
+                <!-- Main hero background image -->
+                <img class="hero-img" src="./assets/home/hero-1.jpg" alt="Nike Air Max Hero Banner" />
 
-
+                <!-- Text overlay on hero image -->
                 <div class="text-overlay">
                     <h1>NIKE AIR MAX</h1>
-                    <p>Nike introducing the new air max for everyone’s comfort</p>
+                    <p>Nike introducing the new air max for everyone's comfort</p>
                     <button onclick="window.location.href='product.html'">SHOP NOW</button>
                 </div>
 
+                <!-- Side label for product recognition -->
                 <div class="side-label">Nike product of the year</div>
-
             </section>
         </div>
+        
+        <!-- Featured Products Section -->
         <div class="landing-products">
+            <!-- Section header with call-to-action -->
             <div class="lp1">
                 <div class="lp1-text">
                     <h1>DON'T MISS OUT</h1>
@@ -87,25 +108,34 @@
                 </div>
                 <button onclick="window.location.href='product.html'">SHOP NEW DROPS</button>
             </div>
+            
+            <!-- Product grid with featured items -->
             <div class="lp2">
+                <!-- Product card 1 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe1.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn" onclick="window.location.href='product.html'">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Product card 2 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe2.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn" onclick="window.location.href='product.html'">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Product card 3 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe3.png" alt="Adidas Shoe" class="product-img" />
                     <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
                     <button class="product-btn" onclick="window.location.href='product.html'">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
+                
+                <!-- Product card 4 -->
                 <div class="product-box">
                     <div class="badge">New</div>
                     <img src="assets/home/shoe4.png" alt="Adidas Shoe" class="product-img" />
@@ -114,7 +144,10 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Categories Section with dark background -->
         <div class="Categories">
+            <!-- Categories header with navigation -->
             <div class="categories-header">
                 <h1>CATEGORIES</h1>
                 <div class="nav-buttons">
@@ -123,7 +156,9 @@
                 </div>
             </div>
 
+            <!-- Category cards display -->
             <div class="categories-content">
+                <!-- Lifestyle category card -->
                 <div class="category-card card1">
                     <img src="assets/home/lifestyle.png" alt="Lifestyle Shoes" />
                     <div class="category-info">
@@ -132,6 +167,7 @@
                     </div>
                 </div>
 
+                <!-- Basketball category card -->
                 <div class="category-card">
                     <img src="assets/home/basketball.png" alt="Basketball Shoes" />
                     <div class="category-info">
@@ -141,12 +177,18 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Customer Reviews Section -->
         <div class="rev-container">
+            <!-- Reviews header -->
             <div class="rev-header">
                 <h1 class="rev-title">REVIEWS</h1>
                 <button class="rev-button" onclick="window.location.href='product.html'">SEE ALL</button>
             </div>
+            
+            <!-- Review cards grid -->
             <div class="rev-cards">
+                <!-- Review card 1 -->
                 <div class="rev-card">
                     <div class="rev-info">
                         <div>
@@ -161,6 +203,7 @@
                     <img class="rev-img" src="assets/home/rev1.png" alt="shoes">
                 </div>
 
+                <!-- Review card 2 -->
                 <div class="rev-card">
                     <div class="rev-info">
                         <div>
@@ -175,6 +218,7 @@
                     <img class="rev-img" src="assets/home/rev2.png" alt="shoes">
                 </div>
 
+                <!-- Review card 3 -->
                 <div class="rev-card">
                     <div class="rev-info">
                         <div>
@@ -190,7 +234,10 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Footer Section -->
         <div class="foot-container">
+            <!-- Newsletter signup section -->
             <div class="foot-top">
                 <div class="foot-left">
                     <h2 class="foot-heading">JOIN OUR KICKSPLUS<br>CLUB & GET 15% OFF</h2>
@@ -203,13 +250,16 @@
                 <img src="assets/home/kicksWhite.svg" alt="KICKS Logo" class="foot-logo" />
             </div>
 
+            <!-- Footer navigation and links -->
             <div class="foot-bottom">
+                <!-- About us section -->
                 <div class="foot-section foot-about">
                     <h3 class="foot-title">About us</h3>
                     <p class="foot-desc">We are the biggest hyperstore in the universe.<br>We got you all cover with our
                         exclusive<br>collections and latest drops.</p>
                 </div>
 
+                <!-- Product categories -->
                 <div class="foot-section">
                     <h3 class="foot-title">Categories</h3>
                     <ul class="foot-list">
@@ -222,6 +272,7 @@
                     </ul>
                 </div>
 
+                <!-- Company information -->
                 <div class="foot-section">
                     <h3 class="foot-title">Company</h3>
                     <ul class="foot-list">
@@ -231,6 +282,7 @@
                     </ul>
                 </div>
 
+                <!-- Social media links -->
                 <div class="foot-section">
                     <h3 class="foot-title">Follow us</h3>
                     <div class="foot-socials">
@@ -241,13 +293,15 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Footer bottom with logo -->
             <div class="foot-end">
-                <img src="assets/home/kicksWhite.svg" alt="">
+                <img src="assets/home/kicksWhite.svg" alt="KICKS Logo">
             </div>
         </div>
-
-
     </div>
+    
+    <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>
 

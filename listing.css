@@ -1,0 +1,469 @@
+/* ===== PRODUCT LISTING PAGE LAYOUT ===== */
+
+/* Main container for the listing page */
+.main-div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== PROMOTIONAL BANNER SECTION ===== */
+
+/* Promotional banner container */
+.cool-banner {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Banner background image */
+.cool-banner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Banner text overlay */
+.banner-stuff {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 40%;
+}
+
+/* Small promotional text */
+.small-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Main banner title */
+.big-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Banner description text */
+.banner-words {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ===== PRODUCT LIST HEADER ===== */
+
+/* List header with title, count, and sort options */
+.list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Category title */
+.list-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Item count display */
+.num-items {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Sort dropdown container */
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Sort label */
+.sort-dropdown label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Sort dropdown select */
+.sort-dropdown select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+
+/* Main section with filters and product grid */
+.main-section {
+    display: flex;
+    gap: 30px;
+}
+
+/* ===== SIDEBAR FILTERS ===== */
+
+/* Sidebar filters container */
+.side-filters {
+    width: 250px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Individual filter box */
+.filter-box {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+/* Remove border from last filter box */
+.filter-box:last-child {
+    border-bottom: none;
+}
+
+/* Filter heading with click functionality */
+.filter-heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Active filter buttons container */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Active filter button */
+.a-tag-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+/* Active filter button hover effect */
+.a-tag-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Currently selected filter button */
+.a-tag-button.current-one {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Dropdown arrow animation */
+.click-to-open span {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Filter choices container */
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ===== SIZE FILTERS ===== */
+
+/* Size filter buttons */
+.sizes button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Size button hover effect */
+.sizes button:hover {
+    background-color: #e0e0e0;
+}
+
+/* ===== COLOR FILTERS ===== */
+
+/* Color filter dots */
+.colors .color-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+/* Individual color options */
+.color-dot.dark-color {
+    background-color: #000;
+}
+
+.color-dot.orange-color {
+    background-color: #E66A1F;
+}
+
+.color-dot.blue-color {
+    background-color: #0F5E9E;
+}
+
+.color-dot.light-color {
+    background-color: #fff;
+}
+
+.color-dot.green-color {
+    background-color: #1A543A;
+}
+
+.color-dot.brown-color {
+    background-color: #98422A;
+}
+
+/* ===== CHECKBOX FILTERS ===== */
+
+/* Custom checkbox container */
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+
+/* Hide default checkbox */
+.check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom checkbox appearance */
+.little-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Checkbox hover effect */
+.check-box:hover input~.little-check {
+    background-color: #ccc;
+}
+
+/* Checked checkbox state */
+.check-box input:checked~.little-check {
+    background-color: #000;
+}
+
+/* Checkmark for checked checkbox */
+.little-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show checkmark when checked */
+.check-box input:checked~.little-check:after {
+    display: block;
+}
+
+/* Checkmark styling */
+.check-box .little-check:after {
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ===== PRODUCT GRID ===== */
+
+/* Product grid container */
+.shoe-grid {
+    flex: 1; /* Takes remaining space */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Individual product item */
+.shoe-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+/* Product item hover effect */
+.shoe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== PRODUCT BADGES ===== */
+
+/* Sale badge positioning */
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* New item badge */
+.sale-badge.new-item {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Discount badge */
+.sale-badge.discount {
+    background-color: #E66A1F;
+    color: #fff;
+}
+
+/* ===== PRODUCT IMAGES ===== */
+
+/* Product image */
+.shoe-pic {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+/* ===== PRODUCT INFORMATION ===== */
+
+/* Product info container */
+.shoe-info {
+    padding: 15px;
+}
+
+/* Product name */
+.shoe-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Action buttons container */
+.buy-buttons {
+    margin-top: 10px;
+}
+
+/* View product button */
+.get-shoe-button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.get-shoe-button:hover {
+    background-color: #333;
+}
+
+/* Old price text (for discounted items) */
+.old-price-text {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+}
+
+/* ===== PAGINATION ===== */
+
+/* Pagination container */
+.page-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+/* Previous/Next page buttons */
+.page-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Arrow icons in page buttons */
+.page-button span {
+    font-size: 10px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+/* Page number buttons */
+.page-num-buttons button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Current page button */
+.page-num-buttons button.current-one {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}

@@ -1,22 +1,26 @@
+/* Import Google Fonts for typography */
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@500&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
+/* Base HTML and Body Styles */
 html {
     font-family: 'Rubik', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
 body {
-    background: #e7e7e3;
+    background: #e7e7e3; /* Light gray background */
     margin: 0;
     font-family: 'Rubik', Arial, sans-serif;
 }
 
+/* ===== NAVIGATION BAR STYLES ===== */
+
+/* Main navigation container */
 .navbar-container {
     margin: 40px auto;
-    max-width: 90vw;
+    max-width: 90vw; /* Responsive width */
     background: #fff;
-    border-radius: 32px;
+    border-radius: 32px; /* Rounded corners */
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 22px;
@@ -27,19 +31,22 @@ body {
     box-sizing: border-box;
 }
 
+/* Left and right navigation sections */
 .navbar-left,
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 32px; /* Space between elements */
 }
 
+/* Center logo section */
 .navbar-center {
-    flex: 1;
+    flex: 1; /* Takes remaining space */
     display: flex;
     justify-content: center;
 }
 
+/* Logo styling */
 .navbar-logo {
     font-size: 48px;
     font-weight: 900;
@@ -48,6 +55,7 @@ body {
     font-family: 'Rubik', Arial, sans-serif;
 }
 
+/* Navigation links */
 .navbar-link {
     font-size: 20px;
     font-weight: 700;
@@ -58,15 +66,18 @@ body {
     gap: 4px;
 }
 
+/* Dropdown arrow styling */
 .navbar-link .dropdown {
     font-size: 16px;
     margin-left: 2px;
 }
 
+/* Active navigation link */
 .navbar-link.active {
     font-weight: 700;
 }
 
+/* Navigation icon buttons (search, account) */
 .navbar-icon {
     font-size: 26px;
     color: #232321;
@@ -76,9 +87,10 @@ body {
     margin: 0 8px;
 }
 
+/* Shopping cart button */
 .cart-btn {
-    background: #ffb23f;
-    border-radius: 50%;
+    background: #ffb23f; /* Orange background */
+    border-radius: 50%; /* Circular shape */
     width: 40px;
     height: 40px;
     display: flex;
@@ -91,10 +103,9 @@ body {
     cursor: pointer;
 }
 
+/* ===== HERO SECTION STYLES ===== */
 
-
-
-
+/* Hero container */
 .hero-container {
     display: flex;
     justify-content: center;
@@ -105,6 +116,7 @@ body {
     max-width: 90vw;
 }
 
+/* Hero title with accent color */
 .hero-title {
     color: #232321;
     margin: 0;
@@ -114,10 +126,12 @@ body {
     color: 232321;
 }
 
+/* Accent color for hero title */
 .hero-title span {
-    color: #4A69E2;
+    color: #4A69E2; /* Blue accent */
 }
 
+/* Hero banner section */
 .hero {
     width: 1320px;
     height: 750px;
@@ -126,6 +140,7 @@ body {
     border-radius: 20px;
 }
 
+/* Hero background image */
 .hero-img {
     width: 100%;
     height: 100%;
@@ -135,6 +150,7 @@ body {
     left: 0;
 }
 
+/* Text overlay on hero image */
 .text-overlay {
     position: absolute;
     bottom: 40px;
@@ -142,6 +158,7 @@ body {
     color: white;
 }
 
+/* Hero call-to-action button */
 .text-overlay button {
     font-size: 24px;
     font-family: "Rubik", sans-serif;
@@ -153,20 +170,22 @@ body {
     cursor: pointer;
 }
 
+/* Hero title text */
 .text-overlay h1 {
     font-size: 92px;
     margin-bottom: 20px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
 }
 
+/* Hero description text */
 .text-overlay p {
     font-size: 36px;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
+/* Side label on hero section */
 .side-label {
     position: absolute;
     top: 0px;
@@ -179,32 +198,34 @@ body {
     font-size: 14px;
 }
 
-.landing-products {
+/* ===== FEATURED PRODUCTS SECTION ===== */
 
+/* Landing products container */
+.landing-products {
     margin: 40px auto;
     margin-top: 10vh;
     max-width: 90vw;
 }
 
+/* Section header with call-to-action */
 .lp1 {
     display: flex;
     justify-content: space-between;
     margin-left: 3vw;
     margin-right: 3vw;
-
     position: relative;
 }
 
+/* Product grid container */
 .lp2 {
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
     margin-left: 3vw;
     margin-right: 3vw;
-
-
 }
 
+/* Call-to-action button */
 .lp1 button {
     font-size: 18px;
     font-family: "Rubik", sans-serif;
@@ -221,10 +242,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 .lp1 button:hover {
     background-color: #2a3b82;
 }
 
+/* Section title styling */
 .lp1-text h1 {
     margin: 0;
     font-size: 64px;
@@ -232,21 +255,24 @@ body {
     color: #232321;
 }
 
+/* ===== PRODUCT CARD STYLES ===== */
+
+/* Individual product card */
 .product-box {
     background: white;
     border-radius: 20px;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: relative;
     text-align: center;
 }
 
+/* New product badge */
 .badge {
     position: absolute;
     top: 0px;
     left: 30px;
-
     background: #4260ff;
     color: white;
     padding: 5px 10px;
@@ -255,21 +281,23 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+/* Product image */
 .product-img {
     width: 100%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-
 }
 
+/* Product title */
 .product-title {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
+/* Product action button */
 .product-btn {
     background: black;
     color: white;
@@ -282,39 +310,46 @@ body {
     transition: background 0.3s ease;
 }
 
+/* Button hover effect */
 .product-btn:hover {
     background: #333;
 }
 
+/* Price styling */
 .price {
-    color: #f9b93a;
+    color: #f9b93a; /* Gold color for price */
 }
 
+/* ===== CATEGORIES SECTION ===== */
 
-
+/* Categories section with dark background */
 .Categories {
     background-color: #232321;
     color: white;
     padding: 40px;
 }
 
+/* Categories header */
 .categories-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Categories title */
 .categories-header h1 {
     font-size: 48px;
     font-weight: bold;
     margin: 0;
 }
 
+/* Navigation buttons for categories */
 .nav-buttons {
     display: flex;
     gap: 10px;
 }
 
+/* Category navigation button */
 .nav-btn {
     background: #f1f1f1;
     border: none;
@@ -326,16 +361,18 @@ body {
     font-weight: bold;
 }
 
+/* Categories content grid */
 .categories-content {
     display: flex;
     margin-top: 30px;
 }
 
-
+/* Special styling for first category card */
 .card1 {
     border-top-left-radius: 250px;
 }
 
+/* Individual category card */
 .category-card {
     position: relative;
     background: #eceef0;
@@ -348,13 +385,14 @@ body {
     overflow: hidden;
 }
 
+/* Category card image */
 .category-card img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-
+/* Category info positioning */
 .category-info button {
     aspect-ratio: square;
     position: absolute;
@@ -363,8 +401,8 @@ body {
     align-items: center;
 }
 
+/* Category title */
 .category-info h1 {
-
     position: absolute;
     left: 50px;
     bottom: 8vh;
@@ -375,6 +413,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Category arrow button */
 .arrow-btn {
     background: #000;
     color: white;
@@ -385,12 +424,16 @@ body {
     cursor: pointer;
 }
 
+/* ===== REVIEWS SECTION ===== */
+
+/* Reviews container */
 .rev-container {
     padding: 40px;
     background-color: #f0f0eb;
     font-family: "Rubik", sans-serif;
 }
 
+/* Reviews header */
 .rev-header {
     display: flex;
     justify-content: space-between;
@@ -398,12 +441,14 @@ body {
     margin-bottom: 25px;
 }
 
+/* Reviews title */
 .rev-title {
     font-size: 48px;
     font-weight: 800;
     color: #232321;
 }
 
+/* See all reviews button */
 .rev-button {
     background-color: #4d6bff;
     color: white;
@@ -414,6 +459,7 @@ body {
     cursor: pointer;
 }
 
+/* Reviews cards grid */
 .rev-cards {
     display: flex;
     gap: 20px;
@@ -421,6 +467,7 @@ body {
     justify-content: space-around;
 }
 
+/* Individual review card */
 .rev-card {
     background-color: white;
     border-radius: 20px;
@@ -432,6 +479,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Review information section */
 .rev-info {
     display: flex;
     justify-content: space-between;
@@ -439,6 +487,7 @@ body {
     align-items: center;
 }
 
+/* Review quality title */
 .rev-quality {
     font-size: 18px;
     font-weight: bold;
@@ -446,18 +495,21 @@ body {
     color: #232321;
 }
 
+/* Review text */
 .rev-text {
     font-size: 14px;
     color: #232321;
     margin: 5px 0;
 }
 
+/* Review rating stars */
 .rev-rating {
     font-size: 14px;
     color: orange;
     font-weight: 500;
 }
 
+/* Review avatar image */
 .rev-avatar {
     width: 40px;
     height: 40px;
@@ -466,15 +518,16 @@ body {
     margin-left: 10px;
 }
 
+/* Review product image */
 .rev-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* ===== FOOTER SECTION ===== */
 
-
-
+/* Footer container */
 .foot-container {
     margin: 40px auto;
     max-width: 90vw;
@@ -484,6 +537,7 @@ body {
     padding: 0;
 }
 
+/* Newsletter signup section */
 .foot-top {
     background-color: #4d6bff;
     color: white;
@@ -495,28 +549,33 @@ body {
     flex-wrap: wrap;
 }
 
+/* Footer left content */
 .foot-left {
     max-width: 500px;
     scale: 1.1;
     margin-left: 30px;
 }
 
+/* Footer heading */
 .foot-heading {
     font-size: 28px;
     font-weight: bold;
     margin: 0 0 10px;
 }
 
+/* Footer subtext */
 .foot-subtext {
     font-size: 14px;
     margin-bottom: 20px;
 }
 
+/* Email input group */
 .foot-input-group {
     display: flex;
     gap: 10px;
 }
 
+/* Email input field */
 .foot-input {
     background-color: transparent;
     padding: 10px 15px;
@@ -524,12 +583,14 @@ body {
     color: white;
     border-radius: 6px;
     outline: none;
-    
 }
+
+/* Email input placeholder */
 .foot-input::placeholder {
     color: rgb(214, 214, 214);
 }
 
+/* Submit button */
 .foot-submit {
     background-color: #232321;
     color: white;
@@ -540,11 +601,13 @@ body {
     cursor: pointer;
 }
 
+/* Footer logo */
 .foot-logo {
     width: 350px;
     height: auto;
 }
 
+/* Footer bottom section */
 .foot-bottom {
     background-color: #232321;
     color: white;
@@ -555,27 +618,32 @@ body {
     position: relative;
 }
 
+/* Footer section */
 .foot-section {
     min-width: 150px;
     margin-bottom: 20px;
 }
 
+/* About section with max width */
 .foot-about {
     max-width: 250px;
 }
 
+/* Footer section title */
 .foot-title {
     color: orange;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Footer description */
 .foot-desc {
     color: #ccc;
     font-size: 14px;
     line-height: 1.5;
 }
 
+/* Footer list */
 .foot-list {
     list-style: none;
     padding: 0;
@@ -583,17 +651,20 @@ body {
     font-size: 14px;
 }
 
+/* Footer list items */
 .foot-list li {
     margin-bottom: 5px;
 }
 
+/* Footer social media icons */
 .foot-socials span {
     font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.foot-end{
+/* Footer end section */
+.foot-end {
     position: relative;
     background-color: #232321;
     display: flex;
@@ -604,387 +675,529 @@ body {
     object-fit: cover;
     overflow-y: hidden;
 }
+
+/* Footer end logo */
 .foot-end img {
     position: absolute;
-    top:3px;
+    top: 3px;
     width: 95%;
     height: auto;
     display: block;
 }
 
-
+/* ===== RESPONSIVE DESIGN - LARGE SCREENS ===== */
 
 @media (max-width: 1200px) {
-  .hero {
-    width: 100%;
-    height: 500px;
-  }
-  .lp2 {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  .product-box {
-    width: 220px;
-  }
-  .category-card {
-    width: 48vw;
-    height: 400px;
-  }
+    /* Adjust hero section for smaller screens */
+    .hero {
+        width: 100%;
+        height: 500px;
+    }
+    
+    /* Wrap product grid for smaller screens */
+    .lp2 {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    /* Adjust product box size */
+    .product-box {
+        width: 220px;
+    }
+    
+    /* Adjust category card size */
+    .category-card {
+        width: 48vw;
+        height: 400px;
+    }
 }
+
+/* ===== RESPONSIVE DESIGN - MEDIUM SCREENS ===== */
 
 @media (max-width: 992px) {
-  .navbar-container {
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .navbar-left, .navbar-right {
-    gap: 16px;
-  }
-  .navbar-logo img {
-    width: 140px;
-  }
-  .hero-title {
-    font-size: 80pt;
-  }
-  .hero {
-    height: 350px;
-  }
-  .text-overlay h1 {
-    font-size: 48px;
-  }
-  .text-overlay p {
-    font-size: 22px;
-  }
-  .lp1-text h1 {
-    font-size: 36px;
-  }
-  .category-card {
-    width: 90vw;
-    height: 300px;
-    padding: 20px 10px;
-  }
-  .categories-header h1, .rev-title {
-    font-size: 32px;
-  }
-  .rev-card {
-    width: 250px;
-  }
-  .foot-logo {
-    width: 180px;
-  }
-  .foot-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 30px 10vw;
-  }
-  .foot-section {
-    width: 100%;
-    min-width: 0;
-    margin-bottom: 18px;
-  }
-  .foot-about {
-    max-width: 100%;
-  }
-  .foot-title {
-    font-size: 20px;
-  }
-  .foot-desc, .foot-list, .foot-list li {
-    font-size: 13px;
-  }
-  .foot-socials span {
-    font-size: 22px;
-    margin-right: 14px;
-  }
+    /* Stack navbar elements vertically */
+    .navbar-container {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Reduce gaps in navbar */
+    .navbar-left, .navbar-right {
+        gap: 16px;
+    }
+    
+    /* Adjust logo size */
+    .navbar-logo img {
+        width: 140px;
+    }
+    
+    /* Reduce hero title size */
+    .hero-title {
+        font-size: 80pt;
+    }
+    
+    /* Adjust hero height */
+    .hero {
+        height: 350px;
+    }
+    
+    /* Reduce overlay text sizes */
+    .text-overlay h1 {
+        font-size: 48px;
+    }
+    .text-overlay p {
+        font-size: 22px;
+    }
+    
+    /* Adjust section title size */
+    .lp1-text h1 {
+        font-size: 36px;
+    }
+    
+    /* Adjust category card for mobile */
+    .category-card {
+        width: 90vw;
+        height: 300px;
+        padding: 20px 10px;
+    }
+    
+    /* Reduce section titles */
+    .categories-header h1, .rev-title {
+        font-size: 32px;
+    }
+    
+    /* Adjust review card size */
+    .rev-card {
+        width: 250px;
+    }
+    
+    /* Reduce footer logo size */
+    .foot-logo {
+        width: 180px;
+    }
+    
+    /* Stack footer sections vertically */
+    .foot-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 30px 10vw;
+    }
+    
+    /* Adjust footer section width */
+    .foot-section {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 18px;
+    }
+    
+    /* Expand about section width */
+    .foot-about {
+        max-width: 100%;
+    }
+    
+    /* Adjust footer text sizes */
+    .foot-title {
+        font-size: 20px;
+    }
+    .foot-desc, .foot-list, .foot-list li {
+        font-size: 13px;
+    }
+    .foot-socials span {
+        font-size: 22px;
+        margin-right: 14px;
+    }
 }
 
+/* ===== RESPONSIVE DESIGN - SMALL SCREENS ===== */
+
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 5vw;
-  }
-  .navbar-left, .navbar-right {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .navbar-center {
-    margin: 10px 0;
-  }
-  .hero-title {
-    font-size: 40pt;
-    margin-bottom: 30px;
-  }
-  .hero {
-    height: 220px;
-    min-width: 0;
-  }
-  .text-overlay {
-    left: 10px;
-    bottom: 10px;
-  }
-  .text-overlay h1 {
-    font-size: 24px;
-  }
-  .text-overlay p {
-    font-size: 14px;
-  }
-  .text-overlay button {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  .side-label {
-    transform: none;
-    left: 30px;
-    font-size: 16px;
-    padding: 5px 10px;
-  }
-  .lp1 {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .lp1-text h1 {
-    font-size: 22px;
-  }
-  .lp2 {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 10px;
-  }
-  .product-box {
-    width: 90vw;
-    margin-bottom: 10px;
-  }
-  .Categories {
-    padding: 20px 5vw;
-  }
-  .categories-header {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .categories-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .category-card {
-    width: 90vw;
-    height: 200px;
-    padding: 10px 5px;
-  }
-  .category-info h1 {
-    left: 20px;
-    bottom: 4vh;
-    font-size: 14px;
-  }
-  .category-info button {
-    right: 20px;
-    bottom: 4vh;
-    font-size: 12px;
-    padding: 4px 6px;
-  }
-  .rev-container {
-    padding: 20px 5vw;
-  }
-  .rev-header {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .rev-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .rev-card {
-    width: 90vw;
-  }
-  .foot-container {
-    padding: 0 5vw;
-  }
-  .foot-top {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .foot-logo {
-    width: 120px;
-  }
-  .foot-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 20px 5vw;
-  }
-  .foot-section {
-    width: 100%;
-    min-width: 0;
-    margin-bottom: 14px;
-  }
-  .foot-title {
-    font-size: 18px;
-    margin-bottom: 6px;
-  }
-  .foot-desc, .foot-list, .foot-list li {
-    font-size: 12px;
-  }
-  .foot-socials span {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  .foot-end {
-    height: 80px;
-  }
+    /* Further reduce navbar padding */
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 5vw;
+    }
+    
+    /* Stack navbar elements vertically */
+    .navbar-left, .navbar-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Center navbar logo */
+    .navbar-center {
+        margin: 10px 0;
+    }
+    
+    /* Significantly reduce hero title */
+    .hero-title {
+        font-size: 40pt;
+        margin-bottom: 30px;
+    }
+    
+    /* Reduce hero height further */
+    .hero {
+        height: 220px;
+        min-width: 0;
+    }
+    
+    /* Adjust text overlay position and size */
+    .text-overlay {
+        left: 10px;
+        bottom: 10px;
+    }
+    .text-overlay h1 {
+        font-size: 24px;
+    }
+    .text-overlay p {
+        font-size: 14px;
+    }
+    .text-overlay button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    /* Adjust side label for mobile */
+    .side-label {
+        transform: none;
+        left: 30px;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    
+    /* Stack section elements vertically */
+    .lp1 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .lp1-text h1 {
+        font-size: 22px;
+    }
+    
+    /* Stack product grid vertically */
+    .lp2 {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 10px;
+    }
+    
+    /* Expand product box width */
+    .product-box {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+    
+    /* Adjust categories padding */
+    .Categories {
+        padding: 20px 5vw;
+    }
+    
+    /* Stack categories header */
+    .categories-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Stack categories content */
+    .categories-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Adjust category card for mobile */
+    .category-card {
+        width: 90vw;
+        height: 200px;
+        padding: 10px 5px;
+    }
+    
+    /* Adjust category info positioning */
+    .category-info h1 {
+        left: 20px;
+        bottom: 4vh;
+        font-size: 14px;
+    }
+    .category-info button {
+        right: 20px;
+        bottom: 4vh;
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+    
+    /* Adjust reviews padding */
+    .rev-container {
+        padding: 20px 5vw;
+    }
+    
+    /* Stack reviews header */
+    .rev-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Stack review cards */
+    .rev-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .rev-card {
+        width: 90vw;
+    }
+    
+    /* Adjust footer padding */
+    .foot-container {
+        padding: 0 5vw;
+    }
+    
+    /* Stack footer top section */
+    .foot-top {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    /* Reduce footer logo size */
+    .foot-logo {
+        width: 120px;
+    }
+    
+    /* Stack footer bottom sections */
+    .foot-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 20px 5vw;
+    }
+    
+    /* Adjust footer section width */
+    .foot-section {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 14px;
+    }
+    
+    /* Adjust footer text sizes */
+    .foot-title {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .foot-desc, .foot-list, .foot-list li {
+        font-size: 12px;
+    }
+    .foot-socials span {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    
+    /* Reduce footer end height */
+    .foot-end {
+        height: 80px;
+    }
 }
+
+/* ===== RESPONSIVE DESIGN - EXTRA SMALL SCREENS ===== */
 
 @media (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-  .navbar-logo img {
-    width: 90px;
-  }
-  .hero-title {
-    font-size: 22pt;
-    margin-bottom: 10px;
-  }
-  .hero {
-    height: 120px;
-  }
-  .text-overlay h1 {
-    font-size: 14px;
-  }
-  .text-overlay p {
-    font-size: 10px;
-  }
-  .lp1-text h1 {
-    font-size: 14px;
-  }
-  .product-box {
-    width: 98vw;
-    padding: 10px 2px;
-  }
-  .category-card {
-    width: 98vw;
-    height: 120px;
-    padding: 5px 2px;
-  }
-  .category-info h1 {
-    font-size: 10px;
-    left: 10px;
-    bottom: 2vh;
-  }
-  .category-info button {
-    font-size: 10px;
-    right: 10px;
-    bottom: 2vh;
-    padding: 2px 4px;
-  }
-  .rev-card {
-    width: 98vw;
-  }
-  .foot-logo {
-    width: 60px;
-  }
-  .foot-end {
-    height: 40px;
-  }
+    /* Reduce base font size */
+    html {
+        font-size: 14px;
+    }
+    
+    /* Reduce logo size further */
+    .navbar-logo img {
+        width: 90px;
+    }
+    
+    /* Minimize hero title */
+    .hero-title {
+        font-size: 22pt;
+        margin-bottom: 10px;
+    }
+    
+    /* Minimize hero height */
+    .hero {
+        height: 120px;
+    }
+    
+    /* Minimize overlay text */
+    .text-overlay h1 {
+        font-size: 14px;
+    }
+    .text-overlay p {
+        font-size: 10px;
+    }
+    
+    /* Minimize section title */
+    .lp1-text h1 {
+        font-size: 14px;
+    }
+    
+    /* Expand product box to full width */
+    .product-box {
+        width: 98vw;
+        padding: 10px 2px;
+    }
+    
+    /* Minimize category card */
+    .category-card {
+        width: 98vw;
+        height: 120px;
+        padding: 5px 2px;
+    }
+    
+    /* Minimize category info */
+    .category-info h1 {
+        font-size: 10px;
+        left: 10px;
+        bottom: 2vh;
+    }
+    .category-info button {
+        font-size: 10px;
+        right: 10px;
+        bottom: 2vh;
+        padding: 2px 4px;
+    }
+    
+    /* Expand review card to full width */
+    .rev-card {
+        width: 98vw;
+    }
+    
+    /* Minimize footer logo */
+    .foot-logo {
+        width: 60px;
+    }
+    
+    /* Minimize footer end height */
+    .foot-end {
+        height: 40px;
+    }
 }
 
+/* ===== MOBILE NAVIGATION STYLES ===== */
 
+/* Mobile navbar (hidden by default) */
 .mobile-navbar {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .navbar-container {
-    display: none !important;
-  }
-  .mobile-navbar {
-    display: block;
-    width: 100vw;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .mobile-navbar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-  }
-  .mobile-navbar-logo img {
-    width: 90px;
-    height: auto;
-  }
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-    width: 36px;
-    height: 36px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1100;
-  }
-  .hamburger .bar {
-    width: 28px;
-    height: 3px;
-    background: #232321;
-    border-radius: 2px;
-    transition: all 0.3s;
-  }
-  .mobile-navbar-menu {
     display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100vw;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    z-index: 1050;
-    padding: 20px 0;
-    transition: max-height 0.3s;
-  }
-  .mobile-navbar-menu.open {
-    display: flex;
-  }
-  .mobile-navbar-link {
-    padding: 16px 24px;
-    font-size: 18px;
-    color: #232321;
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 1px solid #f0f0eb;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .mobile-navbar-link:last-child {
-    border-bottom: none;
-  }
-  .mobile-navbar-link.active {
-    color: #4A69E2;
-  }
 }
 
+/* Show mobile navbar on small screens */
+@media (max-width: 768px) {
+    /* Hide desktop navbar */
+    .navbar-container {
+        display: none !important;
+    }
+    
+    /* Show mobile navbar */
+    .mobile-navbar {
+        display: block;
+        width: 100vw;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    /* Mobile navbar header */
+    .mobile-navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+    
+    /* Mobile logo */
+    .mobile-navbar-logo img {
+        width: 90px;
+        height: auto;
+    }
+    
+    /* Hamburger menu button */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        width: 36px;
+        height: 36px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+    }
+    
+    /* Hamburger menu bars */
+    .hamburger .bar {
+        width: 28px;
+        height: 3px;
+        background: #232321;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+    
+    /* Mobile navigation menu */
+    .mobile-navbar-menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        z-index: 1050;
+        padding: 20px 0;
+        transition: max-height 0.3s;
+    }
+    
+    /* Show mobile menu when open */
+    .mobile-navbar-menu.open {
+        display: flex;
+    }
+    
+    /* Mobile navigation links */
+    .mobile-navbar-link {
+        padding: 16px 24px;
+        font-size: 18px;
+        color: #232321;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid #f0f0eb;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* Remove border from last link */
+    .mobile-navbar-link:last-child {
+        border-bottom: none;
+    }
+    
+    /* Active mobile link */
+    .mobile-navbar-link.active {
+        color: #4A69E2;
+    }
+}
 
+/* ===== HAMBURGER MENU ANIMATION ===== */
+
+/* Animate hamburger bars when open */
 .mobile-navbar .hamburger.open .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
 }
 .mobile-navbar .hamburger.open .bar:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 .mobile-navbar .hamburger.open .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
 }
