@@ -53,6 +53,8 @@ body {
     letter-spacing: -2px;
     color: #232321;
     font-family: 'Rubik', Arial, sans-serif;
+    text-decoration: none;
+    display: block;
 }
 
 /* Navigation links */
@@ -101,6 +103,7 @@ body {
     font-weight: 700;
     color: #232321;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* ===== HERO SECTION STYLES ===== */
@@ -1117,6 +1120,10 @@ body {
     }
     
     /* Mobile logo */
+    .mobile-navbar-logo {
+        text-decoration: none;
+    }
+    
     .mobile-navbar-logo img {
         width: 90px;
         height: auto;

@@ -10,7 +10,7 @@
     <!-- Favicon and external resources -->
     <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
@@ -77,132 +77,139 @@
 
     <!-- Main Content Container -->
     <div class="container">
-        <!-- Product Detail Section -->
-        <div class="product-view">
-            <!-- Product Images Grid -->
-            <div class="product-images">
-                <!-- Main product image (top-left) -->
-                <div class="main-image">
-                    <img src="assets/home/shoe1.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
-                </div>
-                <!-- Lifestyle view image (top-right) -->
-                <div class="lifestyle-image">
-                    <img src="assets/home/shoe2.png" alt="Lifestyle view of running shoes" />
-                </div>
-                <!-- Close-up front view (bottom-left) -->
-                <div class="closeup-front">
-                    <img src="assets/home/shoe3.png" alt="Close-up front view of running shoes" />
-                </div>
-                <!-- Close-up side view (bottom-right) -->
-                <div class="closeup-side">
-                    <img src="assets/home/shoe4.png" alt="Close-up side view of running shoes" />
-                </div>
-            </div>
-            
-            <!-- Product Information and Purchase Options -->
-            <div class="product-details">
-                <!-- New release badge -->
-                <div class="new-release-tag">New Release</div>
-                
-                <!-- Product name and price -->
-                <h1 class="product-name">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
-                <div class="product-price">$125.00</div>
-                
-                <!-- Color selection section -->
-                <div class="color-selection">
-                    <label>COLOR</label>
-                    <div class="color-options">
-                        <div class="color-swatch selected" style="background-color: #1a1a2e;"></div>
-                        <div class="color-swatch" style="background-color: #556b2f;"></div>
+        <div class="checkout">
+            <div class="checkout-container">
+                <!-- Left Section - User Input -->
+                <div class="checkout-left">
+                    <div class="login-link">
+                        <a href="#">Login and Checkout faster</a>
+                    </div>
+                    
+                    <!-- Contact Details -->
+                    <div class="form-section">
+                        <h2>Contact Details</h2>
+                        <p>We will use these details to keep you inform about your delivery.</p>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Shipping Address -->
+                    <div class="form-section">
+                        <h2>Shipping Address</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" name="address" placeholder="Find Delivery Address*" required>
+                            <p class="field-help">Start typing your street address or zip code for suggestion</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+                            <p class="field-help">E.g. (123) 456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Delivery Options -->
+                    <div class="form-section">
+                        <h2>Delivery Options</h2>
+                        <div class="delivery-options">
+                            <div class="delivery-option">
+                                <div class="delivery-info">
+                                    <h3>Standard Delivery</h3>
+                                    <p>Enter your address to see when you'll get your order</p>
+                                </div>
+                                <div class="delivery-price">$6.00</div>
+                            </div>
+                            <div class="delivery-option">
+                                <div class="delivery-info">
+                                    <h3>Collect in store</h3>
+                                    <p>Pay now, collect in store</p>
+                                </div>
+                                <div class="delivery-price">Free</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Checkboxes -->
+                    <div class="form-section">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                My billing and delivery information are the same
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                I'm 13+ year old
+                            </label>
+                        </div>
+                        <div class="newsletter-section">
+                            <h3>Also want product updates with our newsletter?</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Yes, I'd like to receive emails about exclusive sales and more.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="form-section">
+                        <button type="submit" class="review-pay-btn">REVIEW AND PAY</button>
                     </div>
                 </div>
                 
-                <!-- Size selection section -->
-                <div class="size-selection">
-                    <div class="size-header">
-                        <label>SIZE</label>
-                        <a href="#" class="size-chart">SIZE CHART</a>
+                <!-- Right Section - Order Summary -->
+                <div class="checkout-right">
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-item">
+                            <span>1 ITEM</span>
+                            <span>$130.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Delivery</span>
+                            <span>$6.99</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Sales Tax</span>
+                            <span>-</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span>$130.00</span>
+                        </div>
                     </div>
-                    <div class="size-options">
-                        <button class="size-btn selected">38</button>
-                        <button class="size-btn">39</button>
-                        <button class="size-btn">40</button>
-                        <button class="size-btn">41</button>
-                        <button class="size-btn">42</button>
-                        <button class="size-btn">43</button>
-                        <button class="size-btn">44</button>
-                        <button class="size-btn">45</button>
-                        <button class="size-btn">46</button>
-                        <button class="size-btn">47</button>
+                    
+                    <!-- Order Details -->
+                    <div class="order-details">
+                        <h2>Order Details</h2>
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="./assets/listing/shoe1.png" alt="Dropset Trainer Shoes">
+                            </div>
+                            <div class="product-info">
+                                <h3>DROPSET TRAINER SHOES</h3>
+                                <p>Men's Road Running Shoes</p>
+                                <p>Enamel Blue/ University White</p>
+                                <p>Size 10</p>
+                                <p>Quantity 1</p>
+                                <p class="product-price">$130.00</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Action buttons for purchase -->
-                <div class="action-buttons">
-                    <button class="add-to-cart">ADD TO CART</button>
-                    <button class="wishlist-btn">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg>
-                    </button>
-                    <button class="buy-now" onclick="window.location.href='cart.html'">BUY IT NOW</button>
-                </div>
-                
-                <!-- Product information and benefits -->
-                <div class="product-info">
-                    <h3>ABOUT THE PRODUCT</h3>
-                    <p class="color-description">Shadow Navy / Army Green</p>
-                    <p class="exclusion-text">This product is excluded from all promotional discounts and offers.</p>
-                    <ul class="product-benefits">
-                        <li>Pay over time in interest-free installments with Affirm, Klarna or Afterpay.</li>
-                        <li>Join adiClub to get unlimited free standard shipping, returns, & exchanges.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Related Products Section -->
-        <div class="landing-products">
-            <!-- Section header -->
-            <div class="lp1">
-                <div class="lp1-text">
-                    <h1>You May Also Like</h1>
-                </div>
-                <button>SHOP NEW DROPS</button>
-            </div>
-            
-            <!-- Related products grid -->
-            <div class="lp2">
-                <!-- Related product 1 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe1.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
-                
-                <!-- Related product 2 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe2.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
-                
-                <!-- Related product 3 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe3.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
-                
-                <!-- Related product 4 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe4.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
                 </div>
             </div>
         </div>

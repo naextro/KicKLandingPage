@@ -10,6 +10,7 @@
     <!-- Favicon and external resources -->
     <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
@@ -76,37 +77,98 @@
 
     <!-- Main Content Container -->
     <div class="container">
-        <!-- Hero Section with main banner -->
-        <div class="hero-container">
-            <!-- Hero title with accent color -->
-            <h1 class="hero-title">DO IT <span>RIGHT</span></h1>
-            
-            <!-- Hero banner section with overlay text -->
-            <section class="hero">
-                <!-- Main hero background image -->
-                <img class="hero-img" src="./assets/home/hero-1.jpg" alt="Nike Air Max Hero Banner" />
 
-                <!-- Text overlay on hero image -->
-                <div class="text-overlay">
-                    <h1>NIKE AIR MAX</h1>
-                    <p>Nike introducing the new air max for everyone's comfort</p>
-                    <button onclick="window.location.href='product.html'">SHOP NOW</button>
+        <div class="cart-container">
+            <!-- Promotional Banner -->
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <h2 class="promo-title">Saving to celebrate</h2>
+                    <p class="promo-text">Enjoy up to 60% off thousands of styles during the End of Year sale - while supplies last. No code needed.</p>
+                    <div class="promo-links">
+                        <a href="#" class="promo-link">Join us</a>
+                        <a href="#" class="promo-link">Sign-in</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Content -->
+            <div class="cart-content">
+                <!-- Your Bag Section -->
+                <div class="bag-section">
+                    <div class="bag-header">
+                        <h1 class="bag-title">Your Bag</h1>
+                        <p class="bag-subtitle">Items in your bag not reserved - check out now to make them yours.</p>
+                    </div>
+                    
+                    <div class="bag-items">
+                        <div class="bag-item">
+                            <div class="item-image">
+                                <img src="assets/home/shoe1.png" alt="Dropset Trainer Shoes" class="product-image">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-name">DROPSET TRAINER SHOES</h3>
+                                <p class="item-category">Men's Road Running Shoes</p>
+                                <p class="item-color">Enamel Blue/ University White</p>
+                                <div class="item-options">
+                                    <select class="size-selector">
+                                        <option value="10">Size 10</option>
+                                        <option value="9">Size 9</option>
+                                        <option value="11">Size 11</option>
+                                    </select>
+                                    <select class="quantity-selector">
+                                        <option value="1">Quantity 1</option>
+                                        <option value="2">Quantity 2</option>
+                                        <option value="3">Quantity 3</option>
+                                    </select>
+                                </div>
+                                <div class="item-price">$130.00</div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="action-btn remove-btn" aria-label="Remove item">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Side label for product recognition -->
-                <div class="side-label">Nike product of the year</div>
-            </section>
+                <!-- Order Summary Section -->
+                <div class="order-summary">
+                    <h2 class="summary-title">Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span class="summary-label">1 ITEM</span>
+                            <span class="summary-value">$130.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Delivery</span>
+                            <span class="summary-value">$6.99</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Sales Tax</span>
+                            <span class="summary-value">-</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span class="summary-label">Total</span>
+                            <span class="summary-value">$136.99</span>
+                        </div>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn">CHECKOUT</a>
+                </div>
+            </div>
         </div>
-        
+
         <!-- Featured Products Section -->
         <div class="landing-products">
             <!-- Section header with call-to-action -->
             <div class="lp1">
                 <div class="lp1-text">
-                    <h1>DON'T MISS OUT</h1>
-                    <h1>NEW DROPS</h1>
+                    <h1>You May Also like</h1>
                 </div>
-                <button onclick="window.location.href='listing.html'">SHOP NEW DROPS</button>
+                <button onclick="window.location.href='listing.html'">Show More</button>
             </div>
             
             <!-- Product grid with featured items -->
@@ -145,96 +207,9 @@
             </div>
         </div>
         
-        <!-- Categories Section with dark background -->
-        <div class="Categories">
-            <!-- Categories header with navigation -->
-            <div class="categories-header">
-                <h1>CATEGORIES</h1>
-                <div class="nav-buttons">
-                    <button class="nav-btn">&lt;</button>
-                    <button class="nav-btn">&gt;</button>
-                </div>
-            </div>
 
-            <!-- Category cards display -->
-            <div class="categories-content">
-                <!-- Lifestyle category card -->
-                <div class="category-card card1">
-                    <img src="assets/home/lifestyle.png" alt="Lifestyle Shoes" />
-                    <div class="category-info">
-                        <h1>LIFESTYLE <br> SHOES</h1>
-                        <button class="arrow-btn" onclick="window.location.href='product.html'">&#8599;</button>
-                    </div>
-                </div>
-
-                <!-- Basketball category card -->
-                <div class="category-card">
-                    <img src="assets/home/basketball.png" alt="Basketball Shoes" />
-                    <div class="category-info">
-                        <h1>BASKETBALL <br> SHOES</h1>
-                        <button class="arrow-btn" onclick="window.location.href='product.html'">&#8599;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         
-        <!-- Customer Reviews Section -->
-        <div class="rev-container">
-            <!-- Reviews header -->
-            <div class="rev-header">
-                <h1 class="rev-title">REVIEWS</h1>
-                <button class="rev-button" onclick="window.location.href='product.html'">SEE ALL</button>
-            </div>
-            
-            <!-- Review cards grid -->
-            <div class="rev-cards">
-                <!-- Review card 1 -->
-                <div class="rev-card">
-                    <div class="rev-info">
-                        <div>
-                            <h3 class="rev-quality">Good Quality</h3>
-                            <p class="rev-text">I highly recommend shopping from kicks</p>
-                            <div class="rev-rating">
-                                ⭐⭐⭐⭐⭐ <span>5.0</span>
-                            </div>
-                        </div>
-                        <img class="rev-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar">
-                    </div>
-                    <img class="rev-img" src="assets/home/rev1.png" alt="shoes">
-                </div>
 
-                <!-- Review card 2 -->
-                <div class="rev-card">
-                    <div class="rev-info">
-                        <div>
-                            <h3 class="rev-quality">Good Quality</h3>
-                            <p class="rev-text">I highly recommend shopping from kicks</p>
-                            <div class="rev-rating">
-                                ⭐⭐⭐⭐⭐ <span>5.0</span>
-                            </div>
-                        </div>
-                        <img class="rev-avatar" src="https://randomuser.me/api/portraits/men/45.jpg" alt="avatar">
-                    </div>
-                    <img class="rev-img" src="assets/home/rev2.png" alt="shoes">
-                </div>
-
-                <!-- Review card 3 -->
-                <div class="rev-card">
-                    <div class="rev-info">
-                        <div>
-                            <h3 class="rev-quality">Good Quality</h3>
-                            <p class="rev-text">I highly recommend shopping from kicks</p>
-                            <div class="rev-rating">
-                                ⭐⭐⭐⭐⭐ <span>5.0</span>
-                            </div>
-                        </div>
-                        <img class="rev-avatar" src="https://randomuser.me/api/portraits/men/12.jpg" alt="avatar">
-                    </div>
-                    <img class="rev-img" src="assets/home/rev3.png" alt="shoes">
-                </div>
-            </div>
-        </div>
-        
         <!-- Footer Section -->
         <div class="foot-container">
             <!-- Newsletter signup section -->

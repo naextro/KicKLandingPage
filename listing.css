@@ -169,7 +169,7 @@
 
 /* Currently selected filter button */
 .a-tag-button.current-one {
-    background-color: #000;
+    background-color: #232321;
     color: #fff;
 }
 
@@ -216,7 +216,7 @@
 
 /* Individual color options */
 .color-dot.dark-color {
-    background-color: #000;
+    background-color: #232321;
 }
 
 .color-dot.orange-color {
@@ -284,7 +284,7 @@
 
 /* Checked checkbox state */
 .check-box input:checked~.little-check {
-    background-color: #000;
+    background-color: #232321;
 }
 
 /* Checkmark for checked checkbox */
@@ -353,7 +353,7 @@
 
 /* New item badge */
 .sale-badge.new-item {
-    background-color: #000;
+    background-color: #232321;
     color: #fff;
 }
 
@@ -398,7 +398,7 @@
 /* View product button */
 .get-shoe-button {
     width: 100%;
-    background-color: #000;
+    background-color: #232321;
     color: #fff;
     border: none;
     padding: 12px 0;
@@ -463,7 +463,7 @@
 
 /* Current page button */
 .page-num-buttons button.current-one {
-    background-color: #000;
+    background-color: #232321;
     color: #fff;
     border-color: #000;
 }
