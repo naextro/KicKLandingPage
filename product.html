@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KICKS</title>
-    
+
     <!-- Favicon and external resources -->
     <link rel="icon" href="./assets/home/kicksWhite.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
@@ -23,12 +23,13 @@
             <a href="#" class="navbar-link">Men <span class="dropdown">▼</span></a>
             <a href="#" class="navbar-link">Women <span class="dropdown">▼</span></a>
         </div>
-        
+
         <!-- Center logo section -->
         <div class="navbar-center">
-            <a href="index.html" class="navbar-logo"><img style="color: black;" src="./assets/home/kicks.svg" alt="Logo" width="190"></a>
+            <a href="index.html" class="navbar-logo"><img style="color: black;" src="./assets/home/kicks.svg" alt="Logo"
+                    width="190"></a>
         </div>
-        
+
         <!-- Right navigation icons and cart -->
         <div class="navbar-right">
             <!-- Search icon button -->
@@ -51,19 +52,20 @@
             <a href="cart.html" class="cart-btn" aria-label="Cart">0</a>
         </div>
     </nav>
-    
+
     <!-- Mobile Navigation Bar (hidden on desktop) -->
     <nav class="mobile-navbar">
         <!-- Mobile header with logo and hamburger menu -->
         <div class="mobile-navbar-header">
-            <a href="index.html" class="mobile-navbar-logo"><img src="./assets/home/kicks.svg" alt="Logo" width="120"></a>
+            <a href="index.html" class="mobile-navbar-logo"><img src="./assets/home/kicks.svg" alt="Logo"
+                    width="120"></a>
             <button class="hamburger" aria-label="Open Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
         </div>
-        
+
         <!-- Mobile navigation menu (collapsible) -->
         <div class="mobile-navbar-menu">
             <a href="#" class="mobile-navbar-link active">New Drops <span>🔥</span></a>
@@ -83,31 +85,31 @@
             <div class="product-images">
                 <!-- Main product image (top-left) -->
                 <div class="main-image">
-                    <img src="assets/home/shoe1.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
+                    <img src="assets/product/1.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
                 </div>
                 <!-- Lifestyle view image (top-right) -->
                 <div class="lifestyle-image">
-                    <img src="assets/home/shoe2.png" alt="Lifestyle view of running shoes" />
+                    <img src="assets/product/2.png" alt="Lifestyle view of running shoes" />
                 </div>
                 <!-- Close-up front view (bottom-left) -->
                 <div class="closeup-front">
-                    <img src="assets/home/shoe3.png" alt="Close-up front view of running shoes" />
+                    <img src="assets/product/3.png" alt="Close-up front view of running shoes" />
                 </div>
                 <!-- Close-up side view (bottom-right) -->
                 <div class="closeup-side">
-                    <img src="assets/home/shoe4.png" alt="Close-up side view of running shoes" />
+                    <img src="assets/product/4.png" alt="Close-up side view of running shoes" />
                 </div>
             </div>
-            
+
             <!-- Product Information and Purchase Options -->
             <div class="product-details">
                 <!-- New release badge -->
                 <div class="new-release-tag">New Release</div>
-                
+
                 <!-- Product name and price -->
                 <h1 class="product-name">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
                 <div class="product-price">$125.00</div>
-                
+
                 <!-- Color selection section -->
                 <div class="color-selection">
                     <label>COLOR</label>
@@ -116,7 +118,7 @@
                         <div class="color-swatch" style="background-color: #556b2f;"></div>
                     </div>
                 </div>
-                
+
                 <!-- Size selection section -->
                 <div class="size-selection">
                     <div class="size-header">
@@ -136,18 +138,24 @@
                         <button class="size-btn">47</button>
                     </div>
                 </div>
-                
+
                 <!-- Action buttons for purchase -->
                 <div class="action-buttons">
-                    <button class="add-to-cart">ADD TO CART</button>
-                    <button class="wishlist-btn">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg>
-                    </button>
+                    <div class="cart-and-wishlist">
+                        <button class="add-to-cart">ADD TO CART</button>
+                        <button class="wishlist-btn">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
                     <button class="buy-now" onclick="window.location.href='cart.html'">BUY IT NOW</button>
                 </div>
-                
+
                 <!-- Product information and benefits -->
                 <div class="product-info">
                     <h3>ABOUT THE PRODUCT</h3>
@@ -170,43 +178,71 @@
                 </div>
                 <button>SHOP NEW DROPS</button>
             </div>
-            
+
             <!-- Related products grid -->
             <div class="lp2">
                 <!-- Related product 1 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe1.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/home/shoe1.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
+                        <div class="new-overlay">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
+                        <div class="product-btn">
+                            <button>View Product - <span class="price">$125.00</span></button>
+                        </div>
+                    </div>
                 </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/home/shoe2.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
+                        <div class="new-overlay">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
+                        <div class="product-btn">
+                            <button>View Product - <span class="price">$125.00</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/home/shoe3.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
+                        <div class="new-overlay">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
+                        <div class="product-btn">
+                            <button>View Product - <span class="price">$125.00</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/home/shoe4.png" alt="ADIDAS 4DFWD X PARLEY RUNNING SHOES" />
+                        <div class="new-overlay">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h1>
+                        <div class="product-btn">
+                            <button>View Product - <span class="price">$125.00</span></button>
+                        </div>
+                    </div>
+                </div>
+
                 
-                <!-- Related product 2 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe2.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
-                
-                <!-- Related product 3 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe3.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
-                
-                <!-- Related product 4 -->
-                <div class="product-box">
-                    <div class="badge">New</div>
-                    <img src="assets/home/shoe4.png" alt="Adidas Shoe" class="product-img" />
-                    <h3 class="product-title">ADIDAS 4DFWD X PARLEY RUNNING SHOES</h3>
-                    <button class="product-btn">VIEW PRODUCT - <span class="price">$125</span></button>
-                </div>
             </div>
         </div>
-        
+
         <!-- Footer Section -->
         <div class="foot-container">
             <!-- Newsletter signup section -->
@@ -265,14 +301,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Footer bottom with logo -->
             <div class="foot-end">
                 <img src="assets/home/kicksWhite.svg" alt="KICKS Logo">
             </div>
         </div>
     </div>
-    
+
     <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>

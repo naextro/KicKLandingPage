@@ -61,7 +61,7 @@
 /* Product information and purchase options */
 .product-details {
     flex: 1;
-    max-width: 400px;
+    max-width: 430px;
     display: flex;
     flex-direction: column;
     gap: 24px; /* Consistent spacing between elements */
@@ -175,11 +175,14 @@
 .size-options {
     display: grid;
     grid-template-columns: repeat(8, 1fr); /* 8 columns for size buttons */
-    gap: 8px;
+    gap: 4px;
 }
 
 /* Individual size button */
 .size-btn {
+    font-family: 'Rubik', sans-serif;
+    height:50.25px;
+    width:48px;
     padding: 12px 8px;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
@@ -188,7 +191,7 @@
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 /* Size button hover effect */
@@ -216,11 +219,18 @@
     display: flex;
     gap: 12px;
     align-items: center;
+    flex-direction: column;
+}
+.cart-and-wishlist{
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 /* Add to cart button */
 .add-to-cart {
-    flex: 1; /* Takes remaining space */
+    width:374px;
+    height: 48px;
     padding: 16px 24px;
     background-color: #232321;
     color: white;
@@ -242,9 +252,8 @@
 .wishlist-btn {
     width: 48px;
     height: 48px;
-    border: 1px solid #ddd;
-    background-color: white;
-    color: #232321;
+    background-color: #232321;
+    color: white;
     cursor: pointer;
     border-radius: 4px;
     display: flex;
@@ -272,7 +281,7 @@
 
 /* Buy now button */
 .buy-now {
-    flex: 1; /* Takes remaining space */
+    width:430px;
     padding: 16px 24px;
     background-color: #0066cc;
     color: white;
