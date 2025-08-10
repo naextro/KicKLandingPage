@@ -19,12 +19,28 @@ body {
 
 /* Main navigation container */
 .navbar-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 1320px;
+    height: 96px;
+    border-radius: 24px;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    opacity: 1;
     margin: 40px auto;
+    background: #FAFAFA;
+
+
+
+    /*
     max-width: 1320px;
     width: 1320px;
-    background: #fff;
     border-radius: 32px;
-    /* Rounded corners */
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 22px;
@@ -33,6 +49,7 @@ body {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}*/
 }
 
 /* Left and right navigation sections */
